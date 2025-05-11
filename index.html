@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+            </style>
+<section class="container-fluid" id="nav">
+        
+        <nav class="navbar navbar-expand-md navbar-fixed-top ">
+            <div class="container-fluid">
+                <img src="src/logo.webp" alt="" width="300px" class="img-logo" >
+               
+                
+                <!-- Toggler Button -->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="" style="color: #d2b68a;">
+                        ☰
+                       </span>
+                </button>
+
+                <!-- Collapsible Navbar -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.php">Listings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adopt.php">Let's move</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donate.php">About us</a>
+                        </li>
+                        <li class="nav-item bell">
+                    <button id="statusBtn" class="reserve-btn" onclick="showStatusModal()">Contact</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="container-fluid" id="hero-home">
+        <div class="row">
+            <div class="col-md-12 home-text" >
+                <h1 class="fade"><b>Pahrump Realtor</b></h1>
+                <p class="fade">MARCI METZGER - THE RIDGE REALTY GROUP</p>
+                <button class="fade">Call now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 img-s2">
+                    <img src="src/s2.png" alt=""  width="400px">
+                </div>
+                 <div class="col-md-6 text-s2">
+                    <h1 >MARCI METZGER</h1>
+                    <p>REALTOR FOR NEARLY 3 DECADES!</p>
+                    <p>206-919-6886</p>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="s3">
+       <div class="container">
+        <h1 class="text-center" style="font-size: 20px;padding: 40px 0 30px 0;font-family: 'Times New Roman', Times, serif;">GET IT SOLD</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6 img-s3 ">
+                        <img src="src/s3-1.png" alt="" width="350">
+                    </div>
+                    <div class="col-md-4 text-s3">
+                        <h1>Top Residential Sales Last 5 Years</h1>
+                        <p>We helped nearly 90 clients in 2021, and closed 28.5 million in sales! 
+
+Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-12 ">
+                 <div class="row">
+                    <div class="col-md-4  text-s3-a">
+                        <h1>Don't Just List it...</h1>
+                        <p>Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.</p>
+                    </div>
+                    <div class="col-md-6 img-s3-a">
+                        <img src="src/s3-3.png" alt="" width="350">
+                    </div>
+                </div>
+             </div>
+              <div class="col-md-12">
+                 <div class="row">
+                    <div class="col-md-6 img-s3">
+                        <img src="src/s3-2.png" alt="" width="350">
+                    </div>
+                    <div class="col-md-4 text-s3">
+                        <h1>Guide to Buyers</h1>
+                        <p>Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!</p>
+                    </div>
+                </div>
+              </div>
+        </div>
+       </div>
+    </section>
+
+    <section id="s4">
+        <div class="container">
+            <h1 class="text-center" style="font-family: 'Times New Roman', Times, serif;padding: 0 0 30px;">Find Your Dream Home</h1>
+            <div class="row">
+                <div class="col-md-6  s4">
+                    <h1 style="font-size: 25px;font-family: 'Times New Roman', Times, serif;">Search Listings</h1>
+                   
+                        <select class="input-3">
+                            <option value="">Location</option>
+                            <option value="">Any</option>
+                            <option value="dog">Alamo</option>
+                            <option value="cat">Alton</option>
+                            <option value="hamster">Amargosa valley</option>
+                            <option value="parrot">Beatty</option>
+                            <option value="spider">Blue diamond</option>
+                            <option value="goldfish">Brian head</option>
+                            <option value="goldfish">Cal nev ari</option>
+                            <option value="goldfish">Caliente</option>
+                            <option value="goldfish">Cedar city</option>
+                            <option value="goldfish">Cold creek</option>
+                            <option value="goldfish">Crystal</option>
+                            <option value="goldfish">Duck creek village</option>
+                            <option value="goldfish">Dyer</option>
+                            <option value="goldfish">Elko</option>
+                            <option value="goldfish">Ely</option>
+                            <option value="goldfish">Eureka</option>
+                            <option value="goldfish">Goldfield</option>
+                            <option value="goldfish">Hatch</option>
+                            <option value="goldfish">Henderson</option>
+                            <option value="goldfish">Indian springs</option>
+                            <option value="goldfish">Jean</option>
+                            <option value="goldfish">Las vegas</option>
+                            <option value="goldfish">Laughlin</option>
+                            <option value="goldfish">Logandale</option>
+                            <option value="goldfish">Lovelock</option>
+                            <option value="goldfish">Lund</option>
+                            <option value="goldfish">Mc gill</option>
+                            <option value="goldfish">Mesquite</option>
+                            <option value="goldfish">Moapa</option>
+                            <option value="goldfish">Mount charleston</option>
+                            <option value="goldfish">Mountain springs</option>
+                            <option value="goldfish">Nelson</option>
+                            <option value="goldfish">North las vegas</option>
+                            <option value="goldfish">Overton</option>
+                            <option value="goldfish">Pahrump</option>
+                            <option value="goldfish">Palm gardens</option>
+                            <option value="goldfish">Panaca</option>
+                            <option value="goldfish">Pioche</option>
+                            <option value="goldfish">Ruth</option>
+                            <option value="goldfish">Sandy valley</option>
+                            <option value="goldfish">Searhlight</option>
+                            <option value="goldfish">Tonopah</option>
+                            <option value="goldfish">Washington</option>
+                            <option value="goldfish">Other</option>
+                        </select>
+                    <br>
+                  
+                              <select class="input-3">
+                                 <option value="">Type</option>
+                            <option value="">Any</option>
+                            <option value="dog">Land</option>
+                            <option value="cat">Residential lease</option>
+                            <option value="hamster">High rise</option>
+                            <option value="parrot">Residential</option>
+                            </select><br>
+                    
+                     <select class="input-3">
+                         <option value="">Sort by</option>
+                            <option value="">Newest</option>
+                            <option value="dog">Oldest</option>
+                            <option value="cat">Least expensive to most</option>
+                            <option value="hamster">Bedrooms (Low to High)</option>
+                            <option value="parrot">Bedrooms (High to Low)</option>
+                            <option value="hamster">Batrooms (Low to High)</option>
+                            <option value="parrot">Batrooms (High to Low)</option>
+                            </select><br>
+                    
+                            
+                            <select class="input-4">
+                                 <option value="">Bedrooms</option>
+                            <option value="">Any number</option>
+                            <option value="dog">Studio</option>
+                            <option value="cat">1+</option>
+                            <option value="cat">2+</option>
+                            <option value="cat">3+</option>
+                            <option value="cat">4+</option>
+                            <option value="cat">5+</option>
+                            <option value="cat">6+</option>
+                            </select>
+
+                    <select class="input-4">
+                                 <option value="">Bathrooms</option>
+                            <option value="">Any number</option>
+                            <option value="dog">Studio</option>
+                            <option value="cat">1+</option>
+                            <option value="cat">2+</option>
+                            <option value="cat">3+</option>
+                            <option value="cat">4+</option>
+                            <option value="cat">5+</option>
+                            <option value="cat">6+</option>
+                            </select><br>
+                    
+                    <input  class="input-4" type="text" placeholder="Mini price">
+                    
+                    <input  class="input-4" type="text" placeholder="Max price">
+                    <button class="button-input">Search now</button>
+                </div>
+                 <div class="col-md-6 s4-pic">
+                    <img src="src/s4-4.png" alt="" class="img-fluid">
+                 </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="s5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="src/s5-1.webp" alt="" width="100">
+                </div>
+                 <div class="col-md-3">
+                    <img src="src/s5-2.webp" alt=""  width="100">
+                 </div>
+                  <div class="col-md-3">
+                    <img src="src/s5-3.webp" alt=""  width="100">
+                  </div>
+                   <div class="col-md-3">
+                    <img src="src/s5-4.webp" alt=""  width="100">
+                   </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="s6">
+        <div class="container-fluid">
+            <div class="row text-center">
+              <div class="col-md-6">
+                <h1  style="font-size: 30px;font-family: 'Times New Roman', Times, serif;padding: 50px 0 0 0;">Photo Gallery</h1>
+                <p style="opacity: 0.9;">Take a look through our photo gallery to see some of the amazing homes we have to offer. Each place has its own vibe, ready to be your next dream spot!</p>
+                <div class="row">
+                    <div class="col-md-4 photo-gallery" >
+                        <img src="src/s6-2.webp" alt="" class="img-fluid" width="200">
+                    </div>
+                    <div class="col-md-4  photo-gallery">
+                        <img src="src/s6-3.webp" alt="" class="img-fluid" width="200">
+                    </div>
+                    <div class="col-md-4  photo-gallery">
+                        <img src="src/s6-4.webp" alt="" class="img-fluid" width="200">
+                    </div>
+                    <div class="col-md-4  photo-gallery">
+                        <img src="src/s6-5.webp" alt="" class="img-fluid" width="200">
+                    </div>
+                    <div class="col-md-4  photo-gallery">
+                        <img src="src/s6-6.webp" alt="" class="img-fluid" width="200">
+                    </div>
+                    <div class="col-md-4  photo-gallery">
+                        <img src="src/s6-7.webp" alt="" class="img-fluid" width="200">
+                    </div>
+                </div>
+              </div>
+               <div class="col-md-6">
+                <img src="src/s6-final.png" alt="" class="img-fluid" style="padding: 30px 0 0 0;">
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="s7">
+        <div class="container">
+            <h1 class="text-center" style="font-size: 40px;font-family: 'Times New Roman', Times, serif;padding: 50px 0 30px 0;color:#eee5d9 ;">Our Services</h1>
+            <div class="row text-center">
+                <div class="col-md-4 s7">
+                    <img src="src/s7-1.webp" alt="" class="img-fluid " width="300">
+                    <h1>Real Estate Done Right</h1>
+                    <p>Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!</p>
+                </div>
+                <div class="col-md-4 s7">
+                    <img src="src/s7-2.webp" alt="" class="img-fluid" width="300">
+                    <h1>Commercial & Residential</h1>
+                    <p>Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put you hard-earned dollars.</p>
+                </div>
+                <div class="col-md-4 s7">
+                    <img src="src/s7-3.webp" alt="" class="img-fluid" width="300">
+                    <h1>Rely on Expertise</h1>
+                    <p>If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get the answers you need in a timely fashion. We make sure you feel confident and educated every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="col-md-12">
+        <img src="src/Roboto.png" alt="" class="img-fluid">
+        </div>
+        <section id="s8">
+            <div class="container">
+                <h1  class="text-center" style="font-size: 40px;font-family: 'Times New Roman', Times, serif;padding: 0px 0 30px 0;color:black ;">Call or Visit</h1>
+                <div class="row">
+                     <div class="col-md-6 s8-text">
+                        <button><img src="src/whatsapp.png" alt="" width="30"> Message us on WhatsApp</button>
+                        <h1 style="font-family: 'Times New Roman', Times, serif;font-size: 20px; padding: 20px 0 0 0;">Marci Metzger - THE RIDGE REALTY GROUP</h1>
+                        <p style="font-family: Arial, Helvetica, sans-serif;opacity: 0.8;padding: 10px 0 0 0;font-size: 13px;">3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif;opacity: 0.8;padding: 10px 0 0 0;font-size: 13px;">(206) 919-6886</p>
+                        <h1  style="font-family: 'Times New Roman', Times, serif;font-size: 25px; padding: 20px 0 0 0;">Office Hours</h1>
+                         <select class="input-3">
+                                 <option value="">Mon 08:00 am - 07:00 pm</option>
+                            <option value="">Tue 08:00 am - 07:00 pm</option>
+                            <option value="dog">Wed 08:00 am - 07:00 pm</option>
+                            <option value="cat">Thu 08:00 am - 07:00 pm</option>
+                            <option value="cat">Fri 08:00 am - 07:00 pm</option>
+                            <option value="cat">Sat 08:00 am - 07:00 pm</option>
+                            <option value="cat">Sun 08:00 am - 07:00 pm</option>
+                            </select><br>
+                        <p style="font-family: Arial, Helvetica, sans-serif;opacity: 0.8;padding: 10px 0 0 0;font-size: 13px;">Open daily         8:00 am - 7:00 pm</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif;opacity: 0.8;padding: 10px 0 0 0;font-size: 13px;">Appointments outside office hours available upon request. Just call!</p>
+                     </div>
+                    <div class="col-md-6 s8-send ">
+                        <h1 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;padding: 30px 0 0 0;">Send Message</h1>
+                        <input class="input-7" type="text" placeholder="Name"><br>
+                         <input class="input-7" type="text" placeholder="Email*"><br>
+                          <input class="input-7-message" type="text" placeholder="Message"><br>
+                           <button class="button-input">Search now</button>
+                           <p style="opacity: 0.8;font-size: 12px;padding: 30px 0 0 0 ;">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+       <section style="height: 400px; position: relative;">
+    <iframe
+        src="https://maps.google.com/maps?q=3190+NV-160+Suite+F%2C+Pahrump%2C+NV+89048%2C+USA&z=14&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+    <section id="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3">
+                    <img src="src/logo.webp" alt="" class="img-fluid">
+                    <p style="opacity: 0.8;font-size: 14px;padding: 10px 0 0 0 ;">Pahrump Realtor Marci Metzger delivers expert real estate services with decades of experience, helping you buy or sell with confidence in the heart of Nevada.</p>
+                </div>
+                 <div class="col-md-3">
+                    <h1 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">Explore</h1>
+                    <p style="opacity: 0.8;">Home</p>
+                    <p  style="opacity: 0.8;">Listings</p>
+                    <p  style="opacity: 0.8;">Let's move</p>
+                    <p  style="opacity: 0.8;">About us</p>
+                 </div>
+                  <div class="col-md-3">
+                    <h1 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">Contact us</h1>
+                    <p  style="opacity: 0.8;">3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+                    <p  style="opacity: 0.8;">(206) 919-6886 | 206-919-6886</p>
+                    <p  style="opacity: 0.8;">Marcimetzgerhome@gmail.com</p>
+                   
+                  </div>
+                   <div class="col-md-3 footer-link" >
+                    <img src="src/footer1.png" alt="" width="50px">
+                    <img src="src/footer2.png" alt="" width="50px">
+                    <img src="src/footer3.png" alt="" width="50px">
+                      <img src="src/footer4.png" alt="" width="50px">
+                   </div>
+            </div>
+        </div>
+        <h1 class="text-center" style="border-top: #eee5d9 solid 2px;background-color: black;color: #eee5d9;font-size: 12px;padding: 20px 0 10px 0;font-family: 'Times New Roman', Times, serif;">Copyright © 2023 Marci METZGER Homes - All Rights Reserved</h1>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
